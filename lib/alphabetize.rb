@@ -1,7 +1,8 @@
 def alphabetize(arr)
   # code here
   experanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  arr.sort_by {|str|
+  sorted_arr = []
+  sorted_arr = arr.sort_by {|str|
     experanto_alphabet.index(str[0])
   }
   arr
